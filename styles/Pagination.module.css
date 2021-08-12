@@ -1,0 +1,17 @@
+.pagination {
+	background-color: var(--primaryColor1500);
+	padding: var(--size500) 0;
+}
+
+.pagination__container {
+	display: flex;
+	padding: var(--size500) 0;
+	margin-left: var(--size500);
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.pagination__container li {
+	margin-right: var(--size500);
+}

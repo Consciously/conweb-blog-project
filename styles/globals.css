@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200;400;600&family=Montserrat:wght@200;300;400;600&display=swap');
+
+:root {
+	/* Primary colors */
+	--primaryColor100: #a5c3ca;
+	--primaryColor200: #98bbc3;
+	--primaryColor300: #8bb2bb;
+	--primaryColor400: #7eaab4;
+	--primaryColor500: #72a1ac;
+	--primaryColor600: #6598a4;
+	--primaryColor700: #5b8d9a;
+	--primaryColor800: #53828d;
+	--primaryColor900: #4b7681;
+	--primaryColor1000: #446a74;
+	--primaryColor1100: #3c5e67;
+	--primaryColor1200: #35535a;
+	--primaryColor1300: #2d474d;
+	--primaryColor1400: #263b40;
+	--primaryColor1500: #1c2c30;
+	--primaryColor1600: #172327;
+	--primaryColor1700: #0f181a;
+	--primaryColor1800: #080c0d;
+
+	/* Secondary colors */
+	--secondaryColor100: #ecc1c3;
+	--secondaryColor200: #e7b1b5;
+	--secondaryColor300: #e2a1a6;
+	--secondaryColor400: #dd9297;
+	--secondaryColor500: #d98288;
+	--secondaryColor600: #d47379;
+	--secondaryColor700: #cf636a;
+	--secondaryColor800: #ca535b;
+	--secondaryColor900: #c5444c;
+	--secondaryColor1000: #b83941;
+	--secondaryColor1100: #ac353d;
+	--secondaryColor1200: #9c3037;
+	--secondaryColor1300: #8c2b32;
+	--secondaryColor1400: #7d262c;
+	--secondaryColor1500: #6d2227;
+	--secondaryColor1600: #5e1d21;
+	--secondaryColor1700: #4e181c;
+	--secondaryColor1800: #3e1316;
+	--secondaryColor1900: #2f0e11;
+
+	/* Additional shades */
+	--additionalColor100: #f3f3f3;
+	--additionalColor200: #ebebeb;
+	--additionalColor300: #e0e0e0;
+	--additionalColor400: #d6d6d6;
+	--additionalColor500: #cccccc;
+	--additionalColor600: #c2c2c2;
+	--additionalColor700: #b8b8b8;
+	--additionalColor800: #adadad;
+	--additionalColor900: #a3a3a3;
+	--additionalColor1000: #999999;
+	--additionalColor1100: #8f8f8f;
+	--additionalColor1200: #7a7a7a;
+	--additionalColor1300: #707070;
+	--additionalColor1400: #666666;
+	--additionalColor1500: #5c5c5c;
+	--additionalColor1600: #525252;
+	--additionalColor1700: #474747;
+	--additionalColor1800: #3d3d3d;
+	--additionalColor1900: #333333;
+
+	/* font-sizes partials */
+
+	--size100: 0.2rem; /*3.2px*/
+	--size200: 0.4rem; /*6.4px*/
+	--size300: 0.6rem; /*9.6px*/
+	--size400: 0.8rem; /*12.8px*/
+	--size500: 1rem; /*16px*/
+	--size700: 1.2rem; /*19.2px*/
+	--size800: 1.4rem; /*22.4px*/
+	--size900: 1.6rem; /*25.6px*/
+	--size1000: 1.8rem; /*28.8px*/
+	--size1100: 2rem; /*32px*/
+	--size1200: 2.2rem; /*35.2px*/
+	--size1300: 2.4rem; /*38.4px*/
+	--size1400: 2.6rem; /*41.6px*/
+	--size1500: 2.8rem; /*44.8px*/
+	--size1600: 3rem; /*48px*/
+	--size1700: 3.2rem; /*51.2px*/
+	--size1800: 3.4rem; /*54.4px*/
+	--size1900: 3.6rem; /*57.6px*/
+	--size2000: 3.8rem; /*60.8px*/
+	--size2100: 4rem; /*64px*/
+	--size2200: 4.2rem; /*67.2px*/
+	--size2300: 4.4rem; /*70.4px*/
+	--size2400: 4.6rem; /*73.6px*/
+	--size2500: 4.8rem; /*76.8px*/
+	--size2600: 5rem; /*80px*/
+	--size2700: 5.2rem; /*83.2px*/
+	--size2800: 5.4rem; /*86.4px*/
+	--size2900: 5.6rem; /*89.6px*/
+	--size3000: 5.6rem; /*89.6px*/ /*92.8px*/
+}
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	color: var(--primaryColor1800);
+	font-family: Bitter, serif;
+	font-weight: 200;
+}
+
+p,
+a,
+ul,
+ol,
+li {
+	font-size: var(--size500);
+	margin: 0 0 0 0;
+}
+
+a,
+a:link,
+a:visited {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: Montserrat, sans-serif;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: clamp(var(--size1500), 5vw, var(--size3000));
+	margin: 0 0 var(--size1500) 0;
+	color: var(--secondaryColor1100);
+	text-align: center;
+}
+
+h2 {
+	font-size: clamp(var(--size900), 5vw, var(--size1800));
+	/* margin: 0 0 var(--size2000) 0; */
+	padding: 0 0 var(--size2000) 0;
+	text-align: center;
+}
+
+h3 {
+	font-size: clamp(var(--size700), 2.5vw, var(--size1200));
+	text-align: center;
+}
+
+h4 {
+	font-size: var(--size500);
+	text-align: center;
+}
+
+a.button {
+	display: block;
+	/* margin: var(--size500) auto 0; */
+	padding: var(--size200) var(--size400);
+	text-align: center;
+	border: 1px solid var(--primaryColor1800);
+	border-radius: 0.25rem;
+	color: var(--primaryColor1800);
+	outline: none;
+	background: transparent;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	font-size: clamp(var(--size200), 15vw, var(--size500));
+	text-decoration: none;
+}
+
+@media (min-width: 48rem) {
+	a.button {
+		padding: var(--size500) var(--size1100);
+	}
+}
+
+a.button.primary {
+	border-color: transparent;
+	background-color: var(--secondaryColor1200);
+
+	color: var(--primaryColor1500);
+	transition: background-color 0.2s ease-in;
+}
+
+a.button.primary:hover {
+	background-color: var(--secondaryColor1000);
+}
+
+a.button.secondary {
+	border-color: transparent;
+	background-color: var(--primaryColor1100);
+
+	color: var(--primaryColor1500);
+	transition: background-color 0.2s ease-in;
+}
+
+a.button.secondary:hover {
+	background-color: var(--primaryColor900);
+}
+
+.card__container a.primary {
+	margin-top: var(--size500);
+	width: 100%;
+}

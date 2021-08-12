@@ -1,0 +1,13 @@
+.categoryList__container {
+	padding-top: var(--size1000);
+	height: 100%;
+}
+
+.categoryList__container ul {
+	list-style: none;
+	margin: var(--size1000);
+}
+
+.categoryList__container ul li {
+	margin-bottom: var(--size200);
+}

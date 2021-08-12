@@ -1,0 +1,13 @@
+.project__section {
+	background-color: var(--primaryColor1500);
+	display: flex;
+	flex-direction: column;
+	background-color: var(--primaryColor1500);
+}
+
+.project__container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	max-width: 78rem;
+	margin: auto;
+}

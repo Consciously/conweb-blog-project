@@ -1,0 +1,12 @@
+.search__container {
+	position: relative;
+	width: 94%;
+	margin: var(--size1000) auto;
+	padding: var(--size300);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 2rem;
+	background-color: var(--primaryColor1100);
+}

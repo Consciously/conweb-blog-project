@@ -1,0 +1,76 @@
+.project__card {
+	margin: 0 var(--size500) var(--size1000);
+	padding: var(--size500);
+	background: linear-gradient(
+		to bottom,
+		var(--primaryColor900) 0%,
+		var(--primaryColor1100) 100%
+	);
+}
+
+.project__header {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding-top: var(--size1200);
+}
+
+.project__body {
+	width: 100%;
+	height: auto;
+	padding: var(--size1100) var(--size400);
+}
+
+.project__body small {
+	text-align: center;
+	display: block;
+	margin: var(--size500) 0;
+	background-color: var(--primaryColor1800);
+	background-color: var(--primaryColor1500);
+	color: var(--additionalColor300);
+	padding: var(--size200) 0;
+	border-radius: var(--size200);
+}
+
+.project__body small span {
+	font-weight: 400;
+}
+
+.project__body p {
+	font-size: clamp(var(--size500), 5vw, var(--size700));
+	line-height: var(--size1000);
+}
+
+a.project__button {
+	display: block;
+	padding: var(--size500);
+	margin-bottom: var(--size500);
+	text-align: center;
+	border: 1px solid var(--primaryColor1800);
+	border-radius: 0.25rem;
+	color: var(--primaryColor1800);
+	outline: none;
+	background: transparent;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	font-size: clamp(var(--size200), 15vw, var(--size500));
+	text-decoration: none;
+}
+
+@media (min-width: 48rem) {
+	a.project__button {
+		padding: var(--size500) var(--size1100);
+	}
+}
+
+a.project__button_primary {
+	border-color: transparent;
+	background-color: var(--secondaryColor1200);
+
+	color: var(--primaryColor1500);
+	transition: background-color 0.2s ease-in;
+}
+
+a.project__button_primary:hover {
+	background-color: var(--secondaryColor1000);
+}

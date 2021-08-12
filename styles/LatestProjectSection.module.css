@@ -1,0 +1,62 @@
+.latestProjects {
+	background-color: var(--primaryColor1500);
+	padding-top: 15vh;
+}
+
+.latestProjects h1 {
+	text-align: center;
+	padding-top: var(--size1100);
+}
+
+.latestProjects__container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap: var(--size500);
+	max-width: 90rem;
+	margin: auto;
+}
+
+@media (min-width: 48rem) {
+	.latestProjects {
+		padding-top: 30vh;
+	}
+}
+
+.latestProjects h2 {
+	color: var(--additionalColor300);
+}
+
+a.latestProjects__button {
+	display: block;
+	width: 38vw;
+	margin: var(--size1000) auto 0;
+	padding: var(--size200) var(--size400);
+	text-align: center;
+	border: 1px solid var(--primaryColor1800);
+	border-radius: 0.25rem;
+	color: var(--primaryColor1800);
+	outline: none;
+	background: transparent;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	font-size: clamp(var(--size200), 15vw, var(--size500));
+	text-decoration: none;
+}
+
+a.latestProjects__button_secondary {
+	border-color: transparent;
+	background-color: var(--primaryColor1100);
+
+	color: var(--primaryColor1500);
+	transition: background-color 0.2s ease-in;
+}
+
+a.latestProjects__button_secondary:hover {
+	background-color: var(--primaryColor900);
+}
+
+@media (min-width: 48rem) {
+	a.latestProjects__button {
+		padding: var(--size500) var(--size1100);
+	}
+}

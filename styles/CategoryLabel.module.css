@@ -1,0 +1,43 @@
+.categoryLabel__container {
+	position: relative;
+}
+
+.categoryLabel__container a.button {
+	position: absolute;
+	bottom: 8px;
+	right: 0;
+	width: 110px;
+	display: block;
+	padding: var(--size200) var(--size800);
+	text-align: center;
+	border: 1px solid var(--primaryColor1800);
+	border-radius: 0.25rem;
+	color: var(--primaryColor1800);
+	outline: none;
+	background: transparent;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	font-size: clamp(var(--size200), 15vw, var(--size500));
+	text-decoration: none;
+}
+
+.categoryLabel__container a.button.javascript {
+	border-color: #f7df1e;
+	background-color: #f7df1e;
+	color: var(--primaryColor1500);
+}
+
+.categoryLabel__container a.button.nextjs {
+	border-color: #1983ff;
+	background-color: #1983ff;
+}
+
+.categoryLabel__container a.button.webdev {
+	border-color: rgb(28, 173, 218);
+	background-color: rgb(28, 173, 218);
+}
+
+.categoryLabel__container a.button.css {
+	border-color: #2465f1;
+	background-color: #2465f1;
+}

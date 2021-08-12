@@ -1,0 +1,69 @@
+/* FOOTER */
+.footer {
+	background-color: var(--primaryColor1500);
+	/* padding: clamp(var(--size500), 5vw, var(--size1100)); */
+	padding-top: 15vh;
+}
+
+@media (min-width: 48rem) {
+	.footer {
+		padding-top: 30vh;
+	}
+}
+
+.footer p {
+	color: var(--additionalColor300);
+	font-family: Montserrat, sans-serif;
+	font-weight: 200;
+	font-size: clamp(var(--size500), 5vw, var(--size1100));
+	text-align: center;
+	padding-top: var(--size1100);
+}
+
+.footer__social {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: var(--size500);
+	padding-top: var(--size500);
+}
+
+.footer__social svg {
+	stroke: var(--secondaryColor1100);
+	fill: var(--secondaryColor1200);
+	width: 3rem;
+	height: 3rem;
+}
+
+.footer__legals {
+	list-style: none;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: clamp(var(--size300), 5vw, var(--size500));
+	padding-top: var(--size500);
+}
+
+.footer__legals a {
+	display: block;
+	font-size: var(--size800);
+	color: var(--secondaryColor1100);
+	font-family: Montserrat, sans-serif;
+	font-weight: 200;
+	transition: all 0.2s ease-in-out;
+}
+
+.footer__legals li:first-child a > svg {
+	stroke: var(--secondaryColor800);
+	font-weight: 300;
+}
+
+.footer__legals li:not(:first-child) a:active,
+.footer__legals li:not(:first-child) a:hover {
+	color: var(--secondaryColor800);
+	font-weight: 300;
+}
